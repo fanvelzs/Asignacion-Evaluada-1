@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="panelPrincipal" onContextMenuRequested="#mostrarMenuContextual"
+            prefHeight="600.0" prefWidth="900.0" styleClass="fondo-principal"
+            xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.asignacion.controller.MenuPrincipalController">
+    <fx:define>
+        <ContextMenu fx:id="menuContextual">
+            <items>
+                <MenuItem text="Registro de estudiantes" onAction="#abrirRegistroEstudiantes" />
+                <MenuItem text="Registro de películas" onAction="#abrirRegistroPeliculas" />
+                <MenuItem text="Acerca del desarrollador" onAction="#mostrarDesarrollador" />
+            </items>
+        </ContextMenu>
+    </fx:define>
+    <top>
+        <VBox>
+            <MenuBar>
+                <menus>
+                    <Menu text="Archivo">
+                        <items>
+                            <MenuItem text="Salir" onAction="#salirAplicacion" />
+                        </items>
+                    </Menu>
+                    <Menu text="Catálogo">
+                        <items>
+                            <MenuItem text="Registro de Estudiantes" onAction="#abrirRegistroEstudiantes" />
+                            <MenuItem text="Registro de Películas" onAction="#abrirRegistroPeliculas" />
+                        </items>
+                    </Menu>
+                    <Menu text="Desarrollador">
+                        <items>
+                            <MenuItem text="Acerca de" onAction="#mostrarDesarrollador" />
+                            <MenuItem text="Ayuda" onAction="#mostrarAyuda" />
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+        </VBox>
+    </top>
+    <center>
+        <StackPane>
+            <padding>
+                <Insets bottom="48.0" left="48.0" right="48.0" top="48.0" />
+            </padding>
+            <VBox alignment="CENTER" maxWidth="620.0" spacing="18.0" styleClass="tarjeta-bienvenida">
+                <padding>
+                    <Insets bottom="48.0" left="48.0" right="48.0" top="48.0" />
+                </padding>
+                <Label text="ASIGNACIÓN EVALUADA #1" styleClass="etiqueta-superior" />
+                <Label text="Sistema de Registro" styleClass="titulo-principal" />
+                <Label text="Administre estudiantes y películas desde el menú Catálogo."
+                       styleClass="subtitulo" wrapText="true" textAlignment="CENTER" />
+                <Label text="También puede hacer clic derecho en cualquier parte de esta pantalla."
+                       styleClass="ayuda-contextual" wrapText="true" textAlignment="CENTER" />
+            </VBox>
+        </StackPane>
+    </center>
+</BorderPane>

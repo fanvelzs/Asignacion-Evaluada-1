@@ -1,0 +1,151 @@
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #172033;
+}
+
+.fondo-principal {
+    -fx-background-color: linear-gradient(to bottom right, #edf4ff, #f8fbff 58%, #e9f7f2);
+}
+
+.fondo-formulario {
+    -fx-background-color: #f4f7fb;
+}
+
+.menu-bar {
+    -fx-background-color: #13213c;
+    -fx-padding: 4 14 4 14;
+}
+
+.menu-bar .label {
+    -fx-text-fill: white;
+}
+
+.context-menu .label,
+.menu-item .label {
+    -fx-text-fill: #172033;
+}
+
+.tarjeta-bienvenida,
+.tarjeta-formulario {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-border-color: #dde5f0;
+    -fx-border-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(31, 49, 82, 0.12), 22, 0.15, 0, 7);
+}
+
+.etiqueta-superior {
+    -fx-text-fill: #2f6fed;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.titulo-principal {
+    -fx-text-fill: #13213c;
+    -fx-font-size: 38px;
+    -fx-font-weight: bold;
+}
+
+.subtitulo {
+    -fx-text-fill: #5b667b;
+    -fx-font-size: 17px;
+}
+
+.ayuda-contextual {
+    -fx-background-color: #eef4ff;
+    -fx-background-radius: 9;
+    -fx-padding: 11 16 11 16;
+    -fx-text-fill: #31538d;
+}
+
+.cabecera,
+.cabecera-peliculas {
+    -fx-background-color: linear-gradient(to right, #234f9e, #3475d2);
+}
+
+.cabecera-peliculas {
+    -fx-background-color: linear-gradient(to right, #56368e, #8557bd);
+}
+
+.titulo-pantalla {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.subtitulo-cabecera {
+    -fx-text-fill: #e5efff;
+}
+
+.titulo-seccion {
+    -fx-text-fill: #1b2a45;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.texto-ayuda {
+    -fx-text-fill: #68758b;
+    -fx-font-size: 12px;
+}
+
+.text-field,
+.text-area,
+.table-view {
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;
+    -fx-border-color: #cfd9e8;
+}
+
+.text-field {
+    -fx-pref-height: 38px;
+    -fx-background-color: #fbfcfe;
+}
+
+.text-field:focused,
+.text-area:focused {
+    -fx-border-color: #3475d2;
+    -fx-effect: dropshadow(gaussian, rgba(52, 117, 210, 0.18), 8, 0.1, 0, 0);
+}
+
+.button {
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7;
+    -fx-padding: 9 15 9 15;
+}
+
+.boton-primario,
+.boton-pelicula {
+    -fx-background-color: #2f6fed;
+    -fx-text-fill: white;
+}
+
+.boton-pelicula {
+    -fx-background-color: #7447a8;
+}
+
+.boton-secundario {
+    -fx-background-color: #e9eef6;
+    -fx-text-fill: #34425c;
+}
+
+.boton-enlace {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2f6fed;
+    -fx-padding: 6 0 6 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #edf1f7;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-padding: 9 4 9 4;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #dcd0ef;
+    -fx-text-background-color: #241439;
+}
